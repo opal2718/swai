@@ -6,14 +6,32 @@
   <meta name="viewport" content="width=device-width">
   <title>Ayy</title>
   <link href="index.css" rel="stylesheet" type="text/css" >
-
 </head>
 
 <body>
   <div>
-    <header class="head">시스템d</header>
+    <header class="head">급식 줄 신청 시스템</header>
   </div>
-  <div id="test">aydy</div>
+  <div id="test">학번만 써라</div>
+  <div>
+    <p>현재 대기 인원: <b id="waiting">n</b>명</p>
+    <p>내 앞 인원: <b id="myWait">n</b>명</p>
+    <form style="background-color:gray;">
+      <textarea id="username" style="resize: none;"></textarea>
+      <button onclick='getAllDatas({
+        "order": "write",
+        "content": "cafeteria",
+        "user": "guessWho"
+      })' class="submitbutton" style="aspect-ratio: 1; height: 100%; background-color: blueviolet;">submit</button>
+    </form>
+  </div>
+  <div>
+    <button onclick='getAllDatas({
+      "order": "write",
+      "content":"enter",
+      "user":"guessWho"
+    })' class="submitbutton" style="aspect-ratio: 1; height: 100%; background-color: blueviolet;">enter</button>
+  </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
